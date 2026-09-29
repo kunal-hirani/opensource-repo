@@ -1,0 +1,13 @@
+# CODEOWNERS - reviewers are automatically requested per path.
+# Syntax: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+*                           @<your-username>
+
+/docs/                      @<teammate-docs>
+/README.md                  @<teammate-docs>
+/CONTRIBUTING.md            @<teammate-docs>
+
+/.github/workflows/         @<teammate-ci>
+/.markdownlint.yaml         @<teammate-ci>
+/lychee.toml                @<teammate-ci>
+/requirements-docs.txt      @<teammate-ci>

@@ -1,0 +1,7 @@
+# markdownlint-cli2-specific settings: globs, ignores, and other CLI options.
+# Rule configuration lives in .markdownlint.yaml.
+
+ignores:
+  - ".venv/**"
+  - "site/**"
+  - "node_modules/**"

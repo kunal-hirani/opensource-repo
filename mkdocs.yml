@@ -1,0 +1,74 @@
+site_name: weatherkit Documentation
+site_description: >-
+  Documentation for weatherkit, a tiny Python package for temperature
+  conversion, heat index, and classification.
+site_url: https://<your-username>.github.io/<repo>/
+repo_url: https://github.com/<your-username>/<repo>
+repo_name: <your-username>/<repo>
+edit_uri: edit/main/docs/
+
+strict: true
+
+# The negative-test page is intentionally excluded from navigation.
+not_in_nav: |
+  negative-test/broken-link.md
+
+theme:
+  name: material
+  language: en
+  features:
+    - content.action.edit
+    - content.code.copy
+    - navigation.instant
+    - navigation.sections
+    - navigation.top
+    - search.highlight
+    - search.suggest
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          options:
+            docstring_style: google
+            show_source: true
+            show_root_heading: true
+            members_order: source
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+
+nav:
+  - Home: index.md
+  - Getting Started: getting-started/installation.md
+  - Tutorials: tutorials/first-steps.md
+  - How-to Guides:
+      - Convert temperatures: how-to/convert-temperatures.md
+  - Reference: reference/api.md
+  - Explanation: explanation/design.md
+
+copyright: Copyright &copy; 2026 Demo Student — MIT License

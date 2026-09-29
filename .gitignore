@@ -1,0 +1,11 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# MkDocs build output
+site/
+
+# OS noise
+.DS_Store
+Thumbs.db

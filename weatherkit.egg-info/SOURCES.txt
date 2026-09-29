@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+weatherkit/__init__.py
+weatherkit.egg-info/PKG-INFO
+weatherkit.egg-info/SOURCES.txt
+weatherkit.egg-info/dependency_links.txt
+weatherkit.egg-info/top_level.txt

@@ -1,0 +1,11 @@
+extends: existence
+message: "Avoid '%s' - prefer plain, specific language."
+level: warning
+ignorecase: true
+tokens:
+  - utilize
+  - leverage
+  - synergy
+  - whitelist
+  - blacklist
+  - world-class

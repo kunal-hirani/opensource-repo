@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Documentation site
+    url: https://<your-username>.github.io/<repo>/
+    about: Read the full documentation before opening an issue.
+  - name: Questions and ideas
+    url: https://github.com/<your-username>/<repo>/discussions
+    about: For usage questions that are not bugs or feature requests.

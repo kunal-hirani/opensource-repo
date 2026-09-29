@@ -1,0 +1,22 @@
+# markdownlint-cli2 configuration (used locally and in CI).
+# Rule reference: https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md
+
+default: true
+
+# Prose wraps naturally in editors; no line-length limit.
+MD013: false
+
+# Keep a Changelog repeats "Added"/"Changed"/"Fixed" under every release.
+MD024:
+  siblings_only: true
+
+# Issue and PR templates start with YAML front matter and body text, not a heading.
+MD041: false
+
+# MkDocs Material tabs and admonitions require 4-space-indented content, which
+# is indistinguishable from indented code blocks to a Markdown linter.
+MD046: false
+
+# GitHub-style tables use compact "|---|---|" separator rows; the column-style
+# rule would force one exact padding style on every future table.
+MD060: false

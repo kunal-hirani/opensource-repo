@@ -1,0 +1,19 @@
+# lychee link-checker configuration.
+# Docs: https://lychee.cli.rs
+# Used by `lychee './**/*.md'` locally and by lychee-action in CI.
+
+max_retries = 3
+timeout = 20
+
+# 429 is accepted so rate-limited checks still pass; retries handle them.
+accept = [200, 429]
+
+# Never send requests to private/internal hosts (localhost, 10.x, 192.168.x...).
+exclude_all_private = true
+
+# Placeholder domains kept in templates and examples.
+exclude = [
+  '.*\.example\.com',
+  'https?://private\.internal.*',
+  'https://github\.com/<your-username>.*',
+]

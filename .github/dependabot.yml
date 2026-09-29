@@ -1,0 +1,8 @@
+# Dependabot keeps the pinned GitHub Actions up to date.
+# Also enable it in Settings -> Code security -> Dependabot.
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"

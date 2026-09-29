@@ -1,0 +1,4 @@
+[codespell]
+skip = .git,site,.venv,package-lock.json,*.svg,*.min.js
+count =
+quiet-level = 3

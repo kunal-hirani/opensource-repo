@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "weatherkit"
+version = "0.2.0"
+description = "Tiny temperature conversion and heat-index helpers with first-class documentation"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.9"
+keywords = ["temperature", "weather", "documentation"]
+
+[tool.setuptools]
+packages = ["weatherkit"]
+
+[tool.interrogate]
+fail-under = 80
+verbose = 1
+exclude = [".venv", "site", "build", "dist"]
+ignore-init-method = true
+ignore-init-module = false
+ignore-nested-functions = true
+
+[tool.codespell]
+skip = ".git,site,.venv,demo-before"
+count = ""
+quiet-level = 3
